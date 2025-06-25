@@ -97,3 +97,17 @@ server {
     }
 }
 ```
+
+---
+
+## 🚀 Docker로 Nginx 실행
+
+마지막으로 터미널에서 아래 명령어를 실행해 Nginx 컨테이너를 시작합니다.
+
+```terminal
+docker compose up -d
+```
+
+이제 로컬 환경에서 HTTPS로 서비스가 제공됩니다!
+
+이후부턴 docker desktop에서 nginx 컨테이너를 실행시킬 수 있습니다.
