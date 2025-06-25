@@ -1,0 +1,14 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: local-nginx
+    ports:
+      - "443:443"    # 호스트 443 → 컨테이너 443 (개발 중이면 8443:443 등으로도 가능)
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    restart: unless-stopped
+
+networks:
+  default:
+    name: localnet
