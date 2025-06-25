@@ -60,9 +60,10 @@ mkcert -install
 
 ## ⭐️ 프로젝트에서 와일드카드 인증서 발급 및 Nginx 설정
 
-### 4. VSCode에서 프로젝트 내 `certs` 폴더로 이동
+### 4. VSCode에서 프로젝트 내 `certs` 경로 추가 및 이동
 
 ```terminal
+mkdir certs
 cd certs
 ```
 
